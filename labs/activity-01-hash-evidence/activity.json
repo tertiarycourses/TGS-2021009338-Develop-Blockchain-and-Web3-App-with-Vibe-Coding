@@ -1,0 +1,11 @@
+{
+  "num": 1,
+  "slug": "activity-01-hash-evidence",
+  "title": "Hash and anchor certificate evidence",
+  "topic": 1,
+  "contract": "HashRegistry",
+  "mechanism": "register(digest) commits a SHA-256 evidence digest; issuer authorization and duplicate rejection define acceptance.",
+  "prompt": "Act as a Solidity and Python Web3 developer. Build hash and anchor certificate evidence for an isolated test chain. Use Solidity 0.8.30 and web3.py 8.0.0 with EthereumTesterProvider backed by Py-EVM; also allow --rpc for an isolated unlocked local JSON-RPC test chain. Requirements: register(digest) commits a SHA-256 evidence digest; issuer authorization and duplicate rejection define acceptance. Read mock-data.json, derive a canonical SHA-256 digest where required, compile using pinned solc-js 0.8.30, deploy actual EVM bytecode, wait for every receipt and assert receipt status. Include positive and negative authorization/state tests, output chain ID/address/transaction hashes/gas and a deployment manifest. Do not simulate contract state in Python or use mainnet keys. Use OpenZeppelin 5.4.0 for ERC standards. Return Contract.sol, run_activity.py, mock-data.json, compile.cjs, requirements.txt and a detailed troubleshooting guide. Explain integer units, failure cases and what the assertions prove. Never claim a browser wallet or public testnet succeeded unless actually exercised.",
+  "mapping": "A1, K1, K2",
+  "minutes": 35
+}

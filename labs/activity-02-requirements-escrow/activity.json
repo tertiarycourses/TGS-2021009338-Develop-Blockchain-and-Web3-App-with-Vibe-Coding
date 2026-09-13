@@ -1,0 +1,11 @@
+{
+  "num": 2,
+  "slug": "activity-02-requirements-escrow",
+  "title": "Map buyer requirements to Ether escrow",
+  "topic": 1,
+  "contract": "Escrow",
+  "mechanism": "Created \u2192 funded \u2192 released; exactly 0.1 ETH is paid once and only the buyer authorizes release.",
+  "prompt": "Act as a Solidity and Python Web3 developer. Build map buyer requirements to ether escrow for an isolated test chain. Use Solidity 0.8.30 and web3.py 8.0.0 with EthereumTesterProvider backed by Py-EVM; also allow --rpc for an isolated unlocked local JSON-RPC test chain. Requirements: Created \u2192 funded \u2192 released; exactly 0.1 ETH is paid once and only the buyer authorizes release. Read mock-data.json, derive a canonical SHA-256 digest where required, compile using pinned solc-js 0.8.30, deploy actual EVM bytecode, wait for every receipt and assert receipt status. Include positive and negative authorization/state tests, output chain ID/address/transaction hashes/gas and a deployment manifest. Do not simulate contract state in Python or use mainnet keys. Use OpenZeppelin 5.4.0 for ERC standards. Return Contract.sol, run_activity.py, mock-data.json, compile.cjs, requirements.txt and a detailed troubleshooting guide. Explain integer units, failure cases and what the assertions prove. Never claim a browser wallet or public testnet succeeded unless actually exercised.",
+  "mapping": "A1, K1, K2",
+  "minutes": 35
+}

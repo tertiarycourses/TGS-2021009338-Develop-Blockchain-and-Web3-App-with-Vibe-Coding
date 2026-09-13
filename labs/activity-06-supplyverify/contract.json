@@ -1,0 +1,104 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "id",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "stage",
+          "type": "uint256"
+        }
+      ],
+      "name": "Handover",
+      "type": "event"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "batches",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "custodian",
+          "type": "address"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "digest",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "uint256",
+          "name": "stage",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "id",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "digest",
+          "type": "bytes32"
+        }
+      ],
+      "name": "create",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "id",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "address",
+          "name": "to",
+          "type": "address"
+        }
+      ],
+      "name": "handover",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x6080604052348015600e575f5ffd5b5061032f8061001c5f395ff3fe608060405234801561000f575f5ffd5b506004361061003f575f3560e01c80632f7870a014610043578063634bc7db14610058578063c81e25ab1461006b575b5f5ffd5b610056610051366004610265565b6100cc565b005b61005661006636600461029e565b6101c4565b6100a36100793660046102be565b5f602081905290815260409020805460018201546002909201546001600160a01b03909116919083565b604080516001600160a01b03909416845260208401929092529082015260600160405180910390f35b5f82815260208190526040902080546001600160a01b0316331480156100fa57506001600160a01b03821615155b6101375760405162461bcd60e51b815260206004820152600960248201526831bab9ba37b234b0b760b91b60448201526064015b60405180910390fd5b80546001600160a01b038381166001600160a01b0319831617835560028301805491909216915f610167836102d5565b9190505550826001600160a01b0316816001600160a01b0316857f33f16e2eae8399ea2f275d13cc978854a7fb502c25092d6a131d57e22ef5e15f85600201546040516101b691815260200190565b60405180910390a450505050565b5f828152602081905260409020546001600160a01b0316156102115760405162461bcd60e51b815260206004820152600660248201526565786973747360d01b604482015260640161012e565b6040805160608101825233815260208082019384525f8284018181529581529081905291909120905181546001600160a01b0319166001600160a01b03909116178155905160018201559051600290910155565b5f5f60408385031215610276575f5ffd5b8235915060208301356001600160a01b0381168114610293575f5ffd5b809150509250929050565b5f5f604083850312156102af575f5ffd5b50508035926020909101359150565b5f602082840312156102ce575f5ffd5b5035919050565b5f600182016102f257634e487b7160e01b5f52601160045260245ffd5b506001019056fea26469706673582212202f4c53cd4aac1b0e96adb264e153406151d6a9ab95cbbfebb1a02909dc7d89f364736f6c634300081e0033",
+  "compiler": "0.8.30+commit.73712a01.Emscripten.clang",
+  "evmVersion": "cancun",
+  "optimizerRuns": 200
+}

@@ -1,0 +1,83 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "id",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "bytes32",
+          "name": "digest",
+          "type": "bytes32"
+        },
+        {
+          "indexed": false,
+          "internalType": "uint256",
+          "name": "timestamp",
+          "type": "uint256"
+        }
+      ],
+      "name": "Evidence",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "operator",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "id",
+          "type": "bytes32"
+        },
+        {
+          "internalType": "bytes32",
+          "name": "digest",
+          "type": "bytes32"
+        }
+      ],
+      "name": "record",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "recorded",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60a0604052336080523480156012575f5ffd5b506080516102276100305f395f81816048015260d901526102275ff3fe608060405234801561000f575f5ffd5b506004361061003f575f3560e01c8063570ca73514610043578063cda1c3b914610087578063d63997901461009c575b5f5ffd5b61006a7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020015b60405180910390f35b61009a6100953660046101ba565b6100ce565b005b6100be6100aa3660046101da565b5f6020819052908152604090205460ff1681565b604051901515815260200161007e565b336001600160a01b037f00000000000000000000000000000000000000000000000000000000000000001614801561011457505f8281526020819052604090205460ff16155b6101595760405162461bcd60e51b81526020600482015260126024820152716f70657261746f722f6475706c696361746560701b604482015260640160405180910390fd5b5f8281526020819052604090819020805460ff191660011790555182907f4cce32cbaae8103bbd1d43d594a5199fe5ce510a4c49771c8eda79656c422cc1906101ae9084904290918252602082015260400190565b60405180910390a25050565b5f5f604083850312156101cb575f5ffd5b50508035926020909101359150565b5f602082840312156101ea575f5ffd5b503591905056fea2646970667358221220bead98d5fb08ef13c6bc1277218ebb1280f4e9e83a8104a4185244aaa748e1ac64736f6c634300081e0033",
+  "compiler": "0.8.30+commit.73712a01.Emscripten.clang",
+  "evmVersion": "cancun",
+  "optimizerRuns": 200
+}

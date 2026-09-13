@@ -1,0 +1,4 @@
+operation,gas_used
+zero_to_nonzero,43776
+nonzero_to_nonzero,26676
+array_append,65709

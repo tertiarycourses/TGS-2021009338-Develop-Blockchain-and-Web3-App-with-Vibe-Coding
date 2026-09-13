@@ -1,0 +1,13 @@
+{
+  "scenario": "certificate",
+  "record_id": "SG-2026-001",
+  "organisation": "Merlion Training and Logistics",
+  "learner": "Synthetic Learner A",
+  "quantity": 25,
+  "batch": "BATCH-SG-042",
+  "amount_eth": "0.1",
+  "document": "synthetic-certificate.pdf",
+  "purpose": "Synthetic training data; no personal or production records",
+  "token_transfer": 500,
+  "token_allowance": 20
+}

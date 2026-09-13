@@ -1,0 +1,32 @@
+# Private course administration and source material
+.env
+.env.*
+!.env.example
+!.env.sample
+.claude/
+.codex/
+.playwright-mcp/
+assessment/
+reference/
+course_application/
+build/
+qa/
+courseware/archive/
+courseware/assets/
+courseware/slide-map.json
+# Rebuildable runtimes and activity evidence
+**/node_modules/
+**/.venv/
+**/venv/
+**/__pycache__/
+**/*.pyc
+**/output/
+**/outputs/
+**/*.pem
+**/*.key
+.DS_Store
+
+.build-venv/
+output/
+**/deployment.json
+**/results.json

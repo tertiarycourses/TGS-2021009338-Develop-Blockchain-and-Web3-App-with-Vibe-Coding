@@ -1,0 +1,72 @@
+{
+  "abi": [
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "internalType": "bytes32",
+          "name": "digest",
+          "type": "bytes32"
+        },
+        {
+          "indexed": true,
+          "internalType": "address",
+          "name": "issuer",
+          "type": "address"
+        }
+      ],
+      "name": "Registered",
+      "type": "event"
+    },
+    {
+      "inputs": [],
+      "name": "issuer",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "digest",
+          "type": "bytes32"
+        }
+      ],
+      "name": "register",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "bytes32",
+          "name": "",
+          "type": "bytes32"
+        }
+      ],
+      "name": "registered",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x60a0604052336080523480156012575f5ffd5b506080516102156100305f395f81816048015260d901526102155ff3fe608060405234801561000f575f5ffd5b506004361061003f575f3560e01c80631d143848146100435780635524d54814610087578063e1fa8e84146100b9575b5f5ffd5b61006a7f000000000000000000000000000000000000000000000000000000000000000081565b6040516001600160a01b0390911681526020015b60405180910390f35b6100a96100953660046101c8565b5f6020819052908152604090205460ff1681565b604051901515815260200161007e565b6100cc6100c73660046101c8565b6100ce565b005b336001600160a01b037f000000000000000000000000000000000000000000000000000000000000000016146101395760405162461bcd60e51b815260206004820152600b60248201526a697373756572206f6e6c7960a81b60448201526064015b60405180910390fd5b5f8181526020819052604090205460ff16156101835760405162461bcd60e51b81526020600482015260096024820152686475706c696361746560b81b6044820152606401610130565b5f81815260208190526040808220805460ff1916600117905551339183917f7d917fcbc9a29a9705ff9936ffa599500e4fd902e4486bae317414fe967b307c9190a350565b5f602082840312156101d8575f5ffd5b503591905056fea26469706673582212201f909c5e2de00f2a7ccde8ddbcfa687e55f3a0f10f74f87a2bc4df944c1a5bea64736f6c634300081e0033",
+  "compiler": "0.8.30+commit.73712a01.Emscripten.clang",
+  "evmVersion": "cancun",
+  "optimizerRuns": 200
+}
